@@ -6,12 +6,16 @@ public class KosikNaJablka {
     public KosikNaJablka(int size) {
         this.size = size;
         seznam = new Jablko[size];
-        //udělat vyjímku když pocetJablek > size JOOOOO KUUURVA
     }
 
     public void addJablko(Jablko j){
-        seznam[pocetJablek] = j;
-        pocetJablek++;
+        try {
+            seznam[pocetJablek] = j;
+            pocetJablek++;
+        }
+        catch (Exception e){
+            System.out.println("Jablko číslo " +  (pocetJablek + 1) + " se nevejde do košíku");
+        }
     }
     public void giveJablko(){
 
