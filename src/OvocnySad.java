@@ -4,7 +4,7 @@ public class OvocnySad {
         Jablko jablko2 = new Jablko(58, "Green");
 
         Hruska hruska1 = new Hruska(68, 2);
-        Hruska hruska2 = new Hruska(70, 1.6);
+        Hruska hruska2 = new Hruska(70, 1.6); //test github commit
 
         KosikNaJablka J = new KosikNaJablka(5);
         J.addJablko(jablko1);
